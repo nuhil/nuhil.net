@@ -1,15 +1,15 @@
 +++
 languageCode = "bn-bd"
+title = "নোড.জেএস (Node.js) কি এবং কিভাবে কাজ করে"
 author = "Nuhil Mehdy"
 categories = ["Node.js", "Javascript"]
-tags = ["node.js", "libuv", "event loop", "async i/o"]
+tags = ["node.js", "libuv", "event loop", "async i/o", "ইভেন্ট লুপ", "নোড জেএস"]
 date = "2017-11-11"
 description = "Node.js কি, Node.js কিভাবে কাজ করে এবং এর আর্কিটেকচার, ইভেন্ট লুপ ও থ্রেড পুলের কার্যনীতি, একটি Node.js  প্রোগ্রামের লাইফ সাইকেল এবং আরও অনেক বিষয়ে আলোচনা"
 featured = "nodejs-frameworks.png"
 featuredalt = "nodejs-frameworks.png"
 featuredpath = "date"
 linktitle = ""
-title = "নোড.জেএস (Node.js) কি এবং কিভাবে কাজ করে"
 type = "post"
 +++
 

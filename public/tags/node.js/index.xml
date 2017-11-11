@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Node.js on Personal Website of Nuhil Mehdy</title>
+    <link>/tags/node.js/</link>
+    <description>Recent content in Node.js on Personal Website of Nuhil Mehdy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 11 Nov 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/node.js/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>নোড.জেএস (Node.js) কি এবং কিভাবে কাজ করে</title>
+      <link>/blog/what-is-nodejs-and-how-it-works/</link>
+      <pubDate>Sat, 11 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/what-is-nodejs-and-how-it-works/</guid>
+      <description>ভূমিকা ব্যাক এন্ড ডেভেলপমেন্টে Node.js এর উপর ভিত্তি করে বেশ কিছু ওয়েব ফ্রেমওয়ার্ক এর সফল ব্যবহার, প্রায় সব রকম ইউটিলিটি টুল হিসেবে রেডিমেড প্যাকেজের সহজ লভ্যতা এবং ফ্রন্ট এন্ডে অনেক গুলো ভালো ভালো ফ্রেমওয়ার্কের সাম্প্রতিক উন্নতি বেশ ভালো মতই ব্যাকএন্ড, ফ্রন্ট এন্ড বা হাইব্রিড অ্যাপ ডেভেলপমেন্টে জাভাস্ক্রিপ্ট এর প্রভাব বুঝিয়ে দিচ্ছে। আমি এই রাস্তায় একদম নতুন। আমার মনে হয়েছে যেহেতু এই স্ট্যাকে কাজ করতে গেলে সব খানেই জাভাস্ক্রিপ্ট লাগছে তাই আসলেই জাভাস্ক্রিপ্ট কিভাবে কাজ করে, বা এই টুল গুলোর কাজ করার ধরনটাই বা কেমন সেটা জানা খুবি জরুরী। নাহলে সঠিক ভাবে টুল গুলোর ইফিসিয়েন্সি ইউটিলাইজ করা হবে না অথবা উল্টো ভুল ভাবে ব্যবহার করা হয়ে যেতে পারে। তাই আমি গত কয়েক সপ্তাহের লার্নিং রিসোর্সকে একটা জায়গায় গুছিয়ে লিখেছি। কিন্তু, Node.</description>
+    </item>
+    
+  </channel>
+</rss>

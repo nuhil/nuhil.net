@@ -1,0 +1,751 @@
+
+
+
+    
+
+
+
+
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        
+            <title>Event loop - Personal Website of Nuhil Mehdy</title>
+        
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.30.2" />
+        
+  
+    
+  
+
+  
+
+  <link rel="apple-touch-icon-precomposed"
+    href='/favicon/apple-touch-icon-precomposed.png'>
+  <link rel="icon" href='/favicon/favicon.png'>
+  
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage"
+      content='/favicon/mstile.png'>
+  <meta name="application-name" content="Personal Website of Nuhil Mehdy">
+  <meta name="msapplication-tooltip" content="I publish notes in Bangla &amp; English on Programming, Machine Learning, Software Development &amp; Cyber Security.">
+  <meta name="msapplication-config" content='/favicon/ieconfig.xml'>
+
+
+
+        
+        
+            
+                <meta name="description" content="I publish notes in Bangla &amp; English on Programming, Machine Learning, Software Development &amp; Cyber Security.">
+            
+        
+
+        <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Event loop"/>
+<meta name="twitter:description" content="I publish notes in Bangla &amp; English on Programming, Machine Learning, Software Development &amp; Cyber Security."/>
+<meta name="twitter:site" content="@nuhil"/>
+
+        <meta property="og:title" content="Event loop" />
+<meta property="og:description" content="I publish notes in Bangla &amp; English on Programming, Machine Learning, Software Development &amp; Cyber Security." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/tags/event-loop/" />
+
+
+
+<meta property="og:updated_time" content="2017-11-11T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+        
+<meta itemprop="name" content="Event loop">
+<meta itemprop="description" content="I publish notes in Bangla &amp; English on Programming, Machine Learning, Software Development &amp; Cyber Security.">
+
+
+        
+
+        
+            
+        
+
+        
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css">
+            <link rel="stylesheet" href="/css/main.css">
+            <link rel="stylesheet" href="/css/add-on.css">
+        
+
+        
+            
+                
+            
+        
+
+        
+            
+        
+    </head>
+    <body>
+
+      
+      <div id="wrapper">
+
+    
+<header id="header">
+    
+      <h1><a href="/">Event loop</a></h1>
+    
+
+    <nav class="links">
+        <ul>
+            
+                <li>
+                    <a href="/">
+                            <i class="fa fa-home">&nbsp;</i>Home
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/about/">
+                            <i class="fa fa-id-card-o">&nbsp;</i>About
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/blog/">
+                            <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/categories/">
+                            <i class="fa fa-sitemap">&nbsp;</i>Categories
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/contact/">
+                            <i class="fa fa-envelope-o">&nbsp;</i>Contact
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+    <nav class="main">
+        <ul>
+            
+            <li class="search">
+                <a class="fa-search" href="#search">Search</a>
+                <form id="search" method="get" action="//google.com/search">
+                    <input type="text" name="q" placeholder="Search" />
+                    <input type="hidden" name="as_sitesearch" value="/">
+                </form>
+            </li>
+            <li class="menu">
+                <a class="fa-bars" href="#menu">Menu</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<section id="menu">
+
+    
+        <section>
+            <form class="search" method="get" action="//google.com/search">
+                <input type="text" name="q" placeholder="Search" />
+                <input type="hidden" name="as_sitesearch" value="/">
+            </form>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                
+                    <li>
+                        <a href="/">
+                            <h3>
+                                <i class="fa fa-home">&nbsp;</i>Home
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/about/">
+                            <h3>
+                                <i class="fa fa-id-card-o">&nbsp;</i>About
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/blog/">
+                            <h3>
+                                <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/">
+                            <h3>
+                                <i class="fa fa-sitemap">&nbsp;</i>Categories
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/contact/">
+                            <h3>
+                                <i class="fa fa-envelope-o">&nbsp;</i>Contact
+                            </h3>
+                        </a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        <section id="recent-posts">
+            <div class="mini-posts">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+
+                
+                    
+                
+
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/what-is-nodejs-and-how-it-works/">নোড.জেএস (Node.js) কি এবং কিভাবে কাজ করে</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2017-11-11'>
+                                    November 11, 2017</time>
+                            </header>
+                            
+    
+
+    
+        
+        
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+        
+        
+        
+
+        <a href="/blog/what-is-nodejs-and-how-it-works/" class="image featured">
+            <img src="/img/2017/11/nodejs-frameworks.png" alt="">
+        </a>
+    
+
+
+                        </article>
+                
+
+                
+            </div>
+        </section>
+
+    
+        
+</section>
+
+    
+    <div id="main">
+        
+        
+            <article class="post">
+    <header>
+    <div class="title">
+        
+            <h2><a href="/blog/what-is-nodejs-and-how-it-works/">নোড.জেএস (Node.js) কি এবং কিভাবে কাজ করে</a></h2>
+        
+        
+            <p>Node.js কি, Node.js কিভাবে কাজ করে এবং এর আর্কিটেকচার, ইভেন্ট লুপ ও থ্রেড পুলের কার্যনীতি, একটি Node.js  প্রোগ্রামের লাইফ সাইকেল এবং আরও অনেক বিষয়ে আলোচনা</p>
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2017-11-11'>
+            November 11, 2017</time>
+        <span class="author">Nuhil Mehdy</span>
+        
+            <p>16 minute read</p>
+        
+        
+    </div>
+</header>
+
+    
+    
+
+    
+        
+        
+
+
+
+
+
+
+    
+
+
+        
+        
+        
+
+        <a href="/blog/what-is-nodejs-and-how-it-works/" class="image featured">
+            <img src="/img/2017/11/nodejs-frameworks.png" alt="">
+        </a>
+    
+
+
+    <p>ভূমিকা ব্যাক এন্ড ডেভেলপমেন্টে Node.js এর উপর ভিত্তি করে বেশ কিছু ওয়েব ফ্রেমওয়ার্ক এর সফল ব্যবহার, প্রায় সব রকম ইউটিলিটি টুল হিসেবে রেডিমেড প্যাকেজের সহজ লভ্যতা এবং ফ্রন্ট এন্ডে অনেক গুলো ভালো ভালো ফ্রেমওয়ার্কের সাম্প্রতিক উন্নতি বেশ ভালো মতই ব্যাকএন্ড, ফ্রন্ট এন্ড বা হাইব্রিড অ্যাপ ডেভেলপমেন্টে জাভাস্ক্রিপ্ট এর প্রভাব বুঝিয়ে দিচ্ছে। আমি এই রাস্তায় একদম নতুন। আমার মনে হয়েছে যেহেতু এই স্ট্যাকে কাজ করতে গেলে সব খানেই জাভাস্ক্রিপ্ট লাগছে তাই আসলেই জাভাস্ক্রিপ্ট কিভাবে কাজ করে, বা এই টুল গুলোর কাজ করার ধরনটাই বা কেমন সেটা জানা খুবি জরুরী। নাহলে সঠিক ভাবে টুল গুলোর ইফিসিয়েন্সি ইউটিলাইজ করা হবে না অথবা উল্টো ভুল ভাবে ব্যবহার করা হয়ে যেতে পারে। তাই আমি গত কয়েক সপ্তাহের লার্নিং রিসোর্সকে একটা জায়গায় গুছিয়ে লিখেছি। কিন্তু, Node.</p>
+
+    <footer>
+        <ul class="actions">
+            <li><a href="/blog/what-is-nodejs-and-how-it-works/" class="button big">Continue Reading</a></li>
+        </ul>
+        <ul class="stats">
+    
+        
+
+        
+        
+            <li>
+                
+                
+                    
+
+                    
+
+                    
+                        <i class="fa fa-sitemap">&nbsp;</i>
+                    
+
+                    
+                        Categories
+                    
+                
+            </li>
+        
+    
+
+    
+    
+        <li><a href='/categories/node.js'>Node.js</a></li>
+    
+        <li><a href='/categories/javascript'>Javascript</a></li>
+    
+</ul>
+
+    </footer>
+</article>
+
+        
+
+        
+<ul class="actions pagination">
+    
+        <li><a href="#" class="disabled button big previous">Previous Page</a></li>
+    
+
+    
+        <li><a href="#" class="disabled button big next">Next Page</a></li>
+    
+</ul>
+
+    </div>
+    
+<section id="sidebar">
+
+  
+  <section id="intro">
+    
+    
+      
+        <a href='/' class="logo"><img src="/img/main/Nuhil.jpg" alt="Its Nuhil" /></a>
+      
+    
+    
+      <header>
+        <h2>Nuhil Mehdy</h2>
+        <p><a href="https://en.wikipedia.org/wiki/Polyglot_(computing)">Polyglot</a> Programmer, <a href="https://en.wikipedia.org/wiki/White_hat_(computer_security)">White Hat Hacker</a>, Tech Enthusiast BY <i class='fa fa-heart'></i></p>
+      </header>
+    
+    
+      <ul class="icons">
+        
+          <li>
+            <a href="/tags/event-loop/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fa fa-rss"></a>
+          </li>
+        
+        
+  <li><a href="//github.com/nuhil" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+  <li><a href="//stackoverflow.com/users/1061236" target="_blank" title="Stack Overflow" class="fa fa-stack-overflow"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//linkedin.com/in/nuhil" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+  <li><a href="//facebook.com/nuhil" target="_blank" title="Facebook" class="fa fa-facebook"></a></li>
+
+
+
+
+
+
+
+
+
+  <li><a href="//youtube.com/channel/UCJFY9iVRXTJu1SPVI_vRNDw" target="_blank" title="YouTube" class="fa fa-youtube"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//instagram.com/nuhil" target="_blank" title="Instagram" class="fa fa-instagram"></a></li>
+
+
+
+
+
+  <li><a href="//twitter.com/nuhil" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="mailto:contact@nuhil.net" title="Email" class="fa fa-envelope"></a></li>
+
+
+      </ul>
+    
+  </section>
+
+  
+  <section id="recent-posts">
+    <div class="mini-posts">
+      <header>
+        <h3>Recent Posts</h3>
+      </header>
+      <div class="posts-container">
+        
+
+        
+          
+        
+
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/blog/what-is-nodejs-and-how-it-works/">নোড.জেএস (Node.js) কি এবং কিভাবে কাজ করে</a>
+              </h3>
+              
+              <time class="published" datetime='2017-11-11'>
+                November 11, 2017
+              </time>
+            </header>
+            
+    
+
+    
+        
+        
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+        
+        
+        
+
+        <a href="/blog/what-is-nodejs-and-how-it-works/" class="image featured">
+            <img src="/img/2017/11/nodejs-frameworks.png" alt="">
+        </a>
+    
+
+
+          </article>
+        
+      </div>
+
+      
+    </div>
+  </section>
+
+  
+  
+  
+  
+    <section id="categories">
+      <header>
+        <h3>
+          <a href="/categories/">Categories</a>
+        </h3>
+      </header>
+        
+          
+        
+
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/javascript/">Javascript</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/node.js/">Node.js</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+    </section>
+  
+
+  
+  
+    <section id="mini-bio">
+      <h3>About</h1>
+      <p>Computer Science Graduate and former Software Engineer with more than 6 years of experience who believe in Machine Learning and likes the Unix environment for developing API Centric & Back End Web Apps  in Python  and  PHP  ecosystem; considering MEAN  as  a  robust  stack & finds fun  in Mobile  App Development with Objective-C, Swift & Kotlin for iOS & Android and lastly strict on cool UI/UX & Cyber Security</p>
+      <a href="/about/" class="button">Learn More</a>
+    </section>
+  
+
+  
+  <section id="footer">
+    
+      <ul class="icons">
+        
+          <li>
+            <a href="/tags/event-loop/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fa fa-rss"></a>
+          </li>
+        
+        
+  <li><a href="//github.com/nuhil" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+  <li><a href="//stackoverflow.com/users/1061236" target="_blank" title="Stack Overflow" class="fa fa-stack-overflow"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//linkedin.com/in/nuhil" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+  <li><a href="//facebook.com/nuhil" target="_blank" title="Facebook" class="fa fa-facebook"></a></li>
+
+
+
+
+
+
+
+
+
+  <li><a href="//youtube.com/channel/UCJFY9iVRXTJu1SPVI_vRNDw" target="_blank" title="YouTube" class="fa fa-youtube"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//instagram.com/nuhil" target="_blank" title="Instagram" class="fa fa-instagram"></a></li>
+
+
+
+
+
+  <li><a href="//twitter.com/nuhil" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="mailto:contact@nuhil.net" title="Email" class="fa fa-envelope"></a></li>
+
+
+      </ul>
+    
+    <p class="copyright">
+      
+        &copy; 2017
+        
+          Personal Website of Nuhil Mehdy
+        
+      .
+      Powered by <a href="//gohugo.io" target="_blank">Hugo</a>
+    </p>
+  </section>
+</section>
+
+    </div>
+    <a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
+    
+
+    
+      
+    
+
+    
+    
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+      <script src="/js/util.js"></script>
+      <script src="/js/main.js"></script>
+      <script src="/js/backToTop.js"></script>
+    
+
+    
+      
+        
+      
+    
+
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+
