@@ -1,18 +1,18 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "Hugo Future Imperfect"
+title = "Personal Website of Nuhil Mehdy"
 theme = "hugo-future-imperfect"
 preserveTaxonomyNames = true
 paginate = 3
 disqusShortname = "nuhil"
-googleAnalytics = ""
+googleAnalytics = "" # UA-107718367-1
 pluralizeListTitles = false
 
 [params]
   # Sets the meta tag description
-  description          = "HTML5 UP theme, Future Imperfect with some extra goodies, ported by Julio Pescador. Powered by Hugo"
+  description          = "I publish notes in Bangla & English on Programming, Machine Learning, Software Development & Cyber Security."
   # Sets the navbarTitle that appears in the top left of the navigation bar
-  navbarTitle          = "Future Imperfect"
+  navbarTitle          = "Nuhil.net"
   # Sets where "View More Posts" links
   viewMorePostLink     = "/blog/"
 
@@ -33,7 +33,7 @@ pluralizeListTitles = false
   # apple-touch-icon-precomposed.png, favicon.png, favicon.ico, and mstile.png.
   # These are stored in the favicon folder. See the following for more information:
   # https://github.com/audreyr/favicon-cheat-sheet
-  loadFavicon          = false
+  loadFavicon          = true
   faviconVersion       = ""
   # Sets Social Share links to appear on posts
   socialShare          = true
@@ -59,22 +59,22 @@ pluralizeListTitles = false
   # These are optional params related to the sidebar. They are recommended, but not
   # required for proper functionality. HTML is supported within the params.
 [params.intro]
-  header    = "Hugo Future Imperfect"
+  header    = "Nuhil Mehdy"
 
-  paragraph = "Another fine responsive site template by <a href=\"http://html5up.net\">HTML5 UP</a>. Ported by Julio Pescador with some extra goodies <i class='fa fa-hand-peace-o'></i>"
+  paragraph = "<a href=\"https://en.wikipedia.org/wiki/Polyglot_(computing)\">Polyglot</a> Programmer, <a href=\"https://en.wikipedia.org/wiki/White_hat_(computer_security)\">White Hat Hacker</a>, Tech Enthusiast BY <i class='fa fa-heart'></i>"
 
-  about     = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tellus lacus, auctor vehicula molestie quis, tempor quis velit. Quisque in quam ac leo efficitur vulputate. Phasellus ullamcorper aliquam sodales. Maecenas sit amet condimentum ipsum. Proin sit amet ligula elit. Mauris."
+  about     = "Computer Science Graduate and former Software Engineer with more than 6 years of experience who believe in Machine Learning and likes the Unix environment for developing API Centric & Back End Web Apps  in Python  and  PHP  ecosystem; considering MEAN  as  a  robust  stack & finds fun  in Mobile  App Development with Objective-C, Swift & Kotlin for iOS & Android and lastly strict on cool UI/UX & Cyber Security"
 
   # This appears at the top of the sidebar above params.intro.header.
   # A width of less than 100px is recommended from a design perspective.
   [params.intro.pic]
-    src       = "/img/main/logo.jpg"
+    src       = "/img/main/Nuhil.jpg"
     # Sets Image to be a cirlce
     circle    = false
     # Sets Image to be Future Imperfect's hexagon
     imperfect = true
     width     = ""
-    alt       = "Hugo Future Imperfect"
+    alt       = "Its Nuhil"
 
 [params.postAmount]
 # Sets the number of recent posts to show in the sidebar. The default value is 5.
@@ -100,11 +100,11 @@ pluralizeListTitles = false
   identifier = "fa fa-newspaper-o"
   weight = 3
 
-[[menu.main]]
-  name = "Itemized"
-  url = "/itemized/"
-  identifier = "fa fa-list"
-  weight = 4
+#[[menu.main]]
+  # name = "Itemized"
+  # url = "/itemized/"
+  # identifier = "fa fa-list"
+  # weight = 4
 
 [[menu.main]]
   name = "Categories"
@@ -123,43 +123,43 @@ pluralizeListTitles = false
 # and socialAppearAtBottom.
 [social]
   # Coding Communities
-  github          = "jpescador/hugo-future-imperfect"
+  github          = "nuhil"
   gitlab          = ""
-  stackoverflow   = "" # User Number
+  stackoverflow   = "1061236" # User Number
   bitbucket       = ""
   jsfiddle        = ""
   codepen         = ""
   # Visual Art Communities
   deviantart      = ""
-  flickr          = "example"
+  flickr          = ""
   behance         = ""
   dribbble        = ""
   # Publishing Communities
   wordpress       = ""
   medium          = ""
   # Professional/Business Oriented Communities
-  linkedin        = "example"
+  linkedin        = "nuhil"
   foursquare      = ""
   xing            = ""
   slideshare      = ""
   # Social Networks
-  facebook        = "example"
+  facebook        = "nuhil"
   googleplus      = ""
-  reddit          = "example"
+  reddit          = ""
   quora           = ""
-  youtube         = ""
+  youtube         = "channel/UCJFY9iVRXTJu1SPVI_vRNDw"
   vimeo           = ""
   whatsapp        = "" # WhatsApp Number
     # WeChat and QQ need testing.
     wechat          = ""
     qq              = "" # User ID Number
-  instagram       = "example"
+  instagram       = "nuhil"
   tumblr          = ""
-  twitter         = "example"
+  twitter         = "nuhil"
   skype           = ""
   snapchat        = ""
-  pinterest       = "example"
-  telegram        = "example"
+  pinterest       = ""
+  telegram        = ""
   vine            = ""
   # Email
-  email           = "example"
+  email           = "contact@nuhil.net"
