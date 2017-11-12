@@ -7,8 +7,8 @@ tags = ["python", "virtual environment", "virtualenv", "conda"]
 date = "2017-10-02"
 description = "How to create virtual environment in Python using conda."
 featured = ""
-featuredalt = ""
-featuredpath = "date"
+featuredalt = "Python"
+featuredpath = "//i.imgur.com/tfD0kY8.png"
 linktitle = ""
 type = "post"
 +++

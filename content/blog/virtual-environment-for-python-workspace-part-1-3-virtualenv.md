@@ -7,8 +7,8 @@ tags = ["python", "virtual environment", "virtualenv"]
 date = "2017-10-01"
 description = "How to create virtual environment in Python using virtualenv."
 featured = ""
-featuredalt = ""
-featuredpath = "date"
+featuredalt = "Python"
+featuredpath = "//i.imgur.com/tfD0kY8.png"
 linktitle = ""
 type = "post"
 +++

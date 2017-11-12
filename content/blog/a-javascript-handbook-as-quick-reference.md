@@ -6,9 +6,9 @@ categories = ["Javascript"]
 tags = ["javascript", "handbook", "cheat sheet"]
 date = "2017-09-01"
 description = "I collected all the major topics of Javascript with example code and explanation, and crafted here all together."
-featured = "js.png"
+featured = ""
 featuredalt = "JS"
-featuredpath = "date"
+featuredpath = "//i.imgur.com/Ofzxgi2.png"
 linktitle = ""
 type = "post"
 +++

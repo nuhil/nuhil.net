@@ -6,9 +6,9 @@ categories = ["Algorithm"]
 tags = ["Big O", "Algorithm", "Complexity"]
 date = "2016-03-01"
 description = "Analysis of algorithms and making sense of algorithm complexity."
-featured = "algo.jpg"
-featuredalt = ""
-featuredpath = "date"
+featured = ""
+featuredalt = "Algorithm"
+featuredpath = "//i.imgur.com/G8hyQZB.jpg"
 linktitle = ""
 type = "post"
 +++

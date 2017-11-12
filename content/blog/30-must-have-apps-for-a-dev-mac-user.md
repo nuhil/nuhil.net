@@ -6,9 +6,9 @@ categories = ["Tips"]
 tags = ["ম্যাক", "macOS", "ম্যাক অ্যাপ"]
 date = "2017-09-02"
 description = "একটি ফ্রেশ macOS সিস্টেমে একজন ডেভেলপার ইউজার কম পক্ষে কোন কোন অ্যাপ গুলো ইন্সটল করতেই পারেন তার একটা লিস্ট"
-featured = "mac.jpg"
+featured = "
 featuredalt = "Mac"
-featuredpath = "date"
+featuredpath = "//i.imgur.com/ovkJwx8.jpg"
 linktitle = ""
 type = "post"
 +++

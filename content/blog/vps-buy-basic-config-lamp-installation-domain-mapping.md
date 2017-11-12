@@ -6,9 +6,9 @@ categories = ["Dev Ops"]
 tags = ["ভিপিএস", "ল্যাম্প", "ডোমেইন ম্যাপিং", "কনফিগারেশন", "পোস্টফিক্স"]
 date = "2015-05-01"
 description = "কিভাবে VPS কিনতে হয়, ইনিসিয়ালাইজ করতে হয়, ব্যাসিক সেটআপ এবং কনফিগারেশন করতে হয়, একটি ওয়েব সার্ভার হিসেবে সেটাকে তৈরি করতে হয়, ডোমেইন ম্যাপ করতে হয় এসব নিয়ে বিস্তারিত একটি পোস্ট"
-featured = "server.jpg"
-featuredalt = "Mac"
-featuredpath = "date"
+featured = ""
+featuredalt = "Server"
+featuredpath = "https://i.imgur.com/eflCHBQ.jpg"
 linktitle = ""
 type = "post"
 +++

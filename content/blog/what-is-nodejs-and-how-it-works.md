@@ -6,9 +6,9 @@ categories = ["Node.js", "Javascript"]
 tags = ["node.js", "libuv", "event loop", "async i/o", "ইভেন্ট লুপ", "নোড জেএস"]
 date = "2017-11-11"
 description = "Node.js কি, Node.js কিভাবে কাজ করে এবং এর আর্কিটেকচার, ইভেন্ট লুপ ও থ্রেড পুলের কার্যনীতি, একটি Node.js  প্রোগ্রামের লাইফ সাইকেল এবং আরও অনেক বিষয়ে আলোচনা"
-featured = "nodejs-frameworks.png"
+featured = ""
 featuredalt = "node.js"
-featuredpath = "date"
+featuredpath = "//i.imgur.com/9HeASmZ.png"
 linktitle = ""
 type = "post"
 +++
@@ -24,6 +24,17 @@ type = "post"
 
 * ফার্স্ট ক্লাস সিটিজেন হিসেবে ফাংশনকে ব্যবহার করে (ফাংশনকে আর্গুমেন্ট হিসেবে পাঠানো যায়, এক ফাংশনের মধ্যে থেকে আরেকটি ফাংশনকে রিটার্নও করা যায় ইত্যাদি 
 * ইভেন্ট মডেল ব্যবহার করে (এর মাধ্যমে ইভেন্ট ড্রাইভেন প্রোগ্রামিং করা যায়, পক্ষান্তরে যার সাহায্যেই কিনা asynchronous অপারেশন করা সম্ভব হয়)
+
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <ins class="adsbygoogle"
+       style="display:block; text-align:center;"
+       data-ad-layout="in-article"
+       data-ad-format="fluid"
+       data-ad-client="ca-pub-3350277075217187"
+       data-ad-slot="3234594390"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
 
 ## Node.js কি?
 
