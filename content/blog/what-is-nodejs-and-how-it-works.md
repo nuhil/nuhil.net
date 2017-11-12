@@ -25,7 +25,7 @@ type = "post"
 * ফার্স্ট ক্লাস সিটিজেন হিসেবে ফাংশনকে ব্যবহার করে (ফাংশনকে আর্গুমেন্ট হিসেবে পাঠানো যায়, এক ফাংশনের মধ্যে থেকে আরেকটি ফাংশনকে রিটার্নও করা যায় ইত্যাদি 
 * ইভেন্ট মডেল ব্যবহার করে (এর মাধ্যমে ইভেন্ট ড্রাইভেন প্রোগ্রামিং করা যায়, পক্ষান্তরে যার সাহায্যেই কিনা asynchronous অপারেশন করা সম্ভব হয়)
 
-  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <ins class="adsbygoogle"
        style="display:block; text-align:center;"
        data-ad-layout="in-article"
@@ -34,7 +34,7 @@ type = "post"
        data-ad-slot="3234594390"></ins>
   <script>
        (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
+  </script> -->
 
 ## Node.js কি?
 
