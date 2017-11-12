@@ -223,7 +223,7 @@ In the next two posts, I will discuss about `conda`  & `venv`  for similar pur
 
 ## Resources
 
-* https://virtualenv.pypa.io/en/stable/</a>
+* https://virtualenv.pypa.io/en/stable/
 
 > **Do you love Watching than Reading?**  
 [Subscribe](https://www.youtube.com/channel/UCJFY9iVRXTJu1SPVI_vRNDw) & Get Connected with my [YouTube](https://www.youtube.com/channel/UCJFY9iVRXTJu1SPVI_vRNDw) channel for Video version of all my Blog posts.
