@@ -1,4 +1,4 @@
-baseurl = "https://personal-hugo-site.firebaseapp.com/"
+baseurl = "https://nuhil.net"
 languageCode = "en-us"
 title = "Personal Website of Nuhil Mehdy"
 theme = "hugo-future-imperfect"
