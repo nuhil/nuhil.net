@@ -5,7 +5,7 @@ theme = "hugo-future-imperfect"
 preserveTaxonomyNames = true
 paginate = 5
 disqusShortname = "nuhil"
-googleAnalytics = "" # UA-107718367-1
+googleAnalytics = "UA-107718367-1"
 pluralizeListTitles = false
 
 [params]
