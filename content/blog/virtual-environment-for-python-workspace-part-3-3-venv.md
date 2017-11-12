@@ -15,7 +15,7 @@ type = "post"
 
 In the earlier two posts of this series, I discussed about `virtualenv`  and `conda`  and their usage along with some examples. I this post I am going to introduce you guys with another package and environment manager called `venv`  which comes with standard Python3.X by default. So, nothing to worry about its installation.
 
-[Virtual Environment for Python Workspace – Part 1/3 – virtualenv](http://localhost:1313/blog/virtual-environment-for-python-workspace-part-1-3-virtualenv/)  
+[Virtual Environment for Python Workspace – Part 1/3 – virtualenv](/blog/virtual-environment-for-python-workspace-part-1-3-virtualenv/)  
 [Virtual Environment for Python Workspace – Part 2/3 – conda](/blog/virtual-environment-for-python-workspace-part-2-3-conda/)
 
 ## Creating an Environment
