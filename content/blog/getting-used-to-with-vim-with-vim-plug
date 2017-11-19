@@ -1,0 +1,17 @@
++++
+languageCode = "bn-bd"
+title = "A Complete Overview of vim for Scared Beginner"
+author = "Nuhil Mehdy"
+categories = ["Tools"]
+tags = ["vim", "vim plug", "nerdtree", "text editor"]
+date = "2017-11-11"
+description = "A breif walkthrough to vim introduction, basic configuration, plugin management with vim plug, linting, color scheme and more."
+featured = ""
+featuredalt = "vim"
+featuredpath = ""
+linktitle = ""
+type = "post"
+
+draft = true
++++
+
