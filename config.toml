@@ -10,7 +10,7 @@ pluralizeListTitles = false
 
 [params]
   # Sets the meta tag description
-  description          = "I publish notes in Bangla & English on Programming, Machine Learning, Software Development & Cyber Security."
+  description          = "Ployglot Programmer, White Hat Hacker, Tech Enthusiast BY ❤️ who writes notes in Bangla & English on Programming, Machine Learning, Software Development & Cyber Security."
   # Sets the navbarTitle that appears in the top left of the navigation bar
   navbarTitle          = "Nuhil.net"
   # Sets where "View More Posts" links
