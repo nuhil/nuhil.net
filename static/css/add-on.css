@@ -19,3 +19,11 @@
 .post  footer {
   margin-top: 20px;
 }
+
+#mc_embed_signup form{
+  margin-bottom: 5px;
+}
+
+#mc_embed_signup small {
+  color: gray;
+}
