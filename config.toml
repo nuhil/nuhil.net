@@ -1,6 +1,6 @@
 # Hugo variables
 #
-baseurl = "https://hugo-blog-6c9d2.firebaseapp.com/"
+baseurl = "https://nuhil.net/"
 languageCode = "en-us"
 title = "Nuhil Mehdy"
 theme = "nuhil"
