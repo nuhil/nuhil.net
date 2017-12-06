@@ -1,0 +1,11 @@
+name = "Hugo Blog Theme Based on Bootstrap v4"
+license = "MIT"
+licenselink = ""
+description = "A simple Hugo blog theme based on the Bootstrap v4."
+homepage = ""
+tags = ["nuhil", "blog", "mehdy"]
+features = ["responsive", "blog"]
+
+[author]
+  name = "Nuhil Mehdy"
+  homepage = "https://nuhil.net"

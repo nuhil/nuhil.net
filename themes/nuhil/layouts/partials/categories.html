@@ -1,0 +1,26 @@
+  <!-- This if statement only applies if someone goes to the /categories url -->
+  <!-- Otherwise this section is shown for all other links -->
+  {{ if ne ($.Scratch.Get "showCategories") false }}
+  <!-- Categories List -->
+  <section class="sidebar-module">
+    <h4>{{ i18n "categories" }}</h4>
+    {{ if .Site.Params.categoriesByCount }}
+      {{ $.Scratch.Set "categories" .Site.Taxonomies.categories.ByCount }}
+    {{ else }}
+      {{ $.Scratch.Set "categories" .Site.Taxonomies.categories.Alphabetical }}
+    {{ end }}    
+
+    <ol class="list-unstyled">
+    {{ range $key, $value := $.Scratch.Get "categories" }}
+        <li>
+          {{ if ne $value.Name "" }}
+            <a href="/categories/{{ $value.Name | urlize }}/" class="d-block text-capitalize">{{ $value.Name }} <span class="float-right">{{ $value.Count }}</span></a>
+          {{ else }}
+            <a href="#">Uncategorized<span class="float-right">{{ $value.Count }}</span></a>
+          {{ end }}
+        </li>    
+    {{ end }}
+    </ol>  
+
+  </section>
+  {{ end }}    

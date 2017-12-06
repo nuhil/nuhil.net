@@ -1,165 +1,112 @@
-baseurl = "https://nuhil.net"
+# Hugo variables
+#
+baseurl = "https://hugo-blog-6c9d2.firebaseapp.com/"
 languageCode = "en-us"
-title = "Personal Website of Nuhil Mehdy"
-theme = "hugo-future-imperfect"
-preserveTaxonomyNames = true
+title = "Nuhil Mehdy"
+theme = "nuhil"
+# number of posts to show on home/category/tag pages (Default: 10)
 paginate = 5
-disqusShortname = "nuhil"
+# optionally override the site's footer with custom copyright text
+copyright = "&copy; Except where otherwise noted, content on this site is licensed under a [C C Attribution 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/)."
 googleAnalytics = "UA-107718367-1"
-pluralizeListTitles = false
+disqusShortname = "nuhil"
 
+[permalinks]
+  post = "/:year/:month/:title/"
+  page = "/:slug/"
+
+[[menu.sidebar]]
+  name = "ডাটা সায়েন্সের ভিত্তি"
+  url = "https://ds.howtocode.com.bd"  
+
+[[menu.sidebar]]
+  name = "iOS প্রোগ্রামিং উইথ সুইফট"
+  url = "https://ios.howtocode.com.bd"    
+
+[[menu.sidebar]]
+  name = "ডিপ লার্নিং ও আর্টিফিশিয়াল নিউরাল নেটওয়ার্ক"
+  url = "https://dl.howtocode.com.bd"  
+
+[[menu.sidebar]]
+  name = "বাংলায় পাইথন প্রোগ্রামিং"
+  url = "https://python.howtocode.com.bd"  
+
+# custom navbar menu entry.   See the custom_navbar parameter below for
+# details.
+
+#[[menu.navbar]]
+#  name = "Link 1"
+#  url = "https://example.org"
+
+
+# Theme variables
+#
 [params]
-  # Sets the meta tag description
-  description          = "Ployglot Programmer, White Hat Hacker, Tech Enthusiast BY ❤️ who writes notes in Bangla & English on Programming, Machine Learning, Software Development & Cyber Security."
-  # Sets the navbarTitle that appears in the top left of the navigation bar
-  navbarTitle          = "Nuhil.net"
-  # Sets where "View More Posts" links
-  viewMorePostLink     = "/blog/"
+  # Site author
+  author = "Nuhil Mehdy"
 
-# Optional Params
-  # Sets navbarTitle to match the section of the website
-  dynamicTitles        = true
-  # Sets RSS icons to appear on the sidebar with the social media buttons
-  rssAppearAtTop       = true
-  rssAppearAtBottom    = true
-  # Sets Social Media icons to appear on the sidebar
-  socialAppearAtTop    = true
-  socialAppearAtBottom = true
-  # Sets Categories to sort by number of posts instead of alphabetical
-  categoriesByCount    = true
-  # Sets Estimated Reading Time to appear in post headers
-  includeReadingTime   = true
-  # Sets the Favicon and Version for the site. Default support is for
-  # apple-touch-icon-precomposed.png, favicon.png, favicon.ico, and mstile.png.
-  # These are stored in the favicon folder. See the following for more information:
-  # https://github.com/audreyr/favicon-cheat-sheet
-  loadFavicon          = true
-  faviconVersion       = ""
-  # Sets Social Share links to appear on posts
-  socialShare          = true
-  # Load custom CSS or JavaScript files. The variable is an array so that you
-  # can load multiple files if necessary. You can also load the standard theme
-  # files by adding the value, "default".
-  # customCSS            = ["default", "/path/to/file"]
-  # customJS             = ["default", "/path/to/file"]
-  customCSS            = ["default"]
-  customJS             = ["default"]
+  # Description/subtitle for homepage (can be Markdown)
+  description = "Polyglot Programmer, White Hat Hacker, Tech Enthusiast by Choice!"
 
-# Disqus will take priority over Staticman (github.com/eduardoboucas/staticman)
-# due to its ease of use. Feel free to check out both and decide what you would
-# prefer to use. See Staticman.yml for additional settings.
-[params.staticman]
-  # Sets Statiman to be active
-  staticman = false
-  # Sets the location for Staticman to connect to
-  username  = ""
-  repo      = ""
-  branch    = ""
+  # Format dates with Go's time formatting
+  date_format = "Mon Jan 02, 2006"
 
-  # These are optional params related to the sidebar. They are recommended, but not
-  # required for proper functionality. HTML is supported within the params.
-[params.intro]
-  header    = "Nuhil Mehdy"
+  # verification string for Google Webmaster Tools
+  #google_verify_meta = "BAi57DROASu4b2mkVNA_EyUsobfA7Mq8BmSg7Rn-Zp9"
 
-  paragraph = "<a href=\"https://en.wikipedia.org/wiki/Polyglot_(computing)\">Polyglot</a> Programmer, <a href=\"https://en.wikipedia.org/wiki/White_hat_(computer_security)\">White Hat Hacker</a>, Tech Enthusiast BY <i class='fa fa-heart'></i>"
+  # verification string for Bing Webmaster Tools
+  #bing_verify_meta = "3DA353059F945D1AA256B1CD8A3DA847"
 
-  about     = "Computer Science Graduate and former Software Engineer with more than 6 years of experience who believe in Machine Learning and likes the Unix environment for developing API Centric & Back End Web Apps  in Python  and  PHP  ecosystem; considering MEAN  as  a  robust  stack & finds fun  in Mobile  App Development with Objective-C, Swift & Kotlin for iOS & Android and lastly strict on cool UI/UX & Cyber Security"
+  # verification string for Yandex Webmaster Tools
+  #yandex_verify_meta = "66b077430f35f04a"
 
-  # This appears at the top of the sidebar above params.intro.header.
-  # A width of less than 100px is recommended from a design perspective.
-  [params.intro.pic]
-    src       = "/img/main/Nuhil.jpg"
-    # Sets Image to be a cirlce
-    circle    = false
-    # Sets Image to be Future Imperfect's hexagon
-    imperfect = true
-    width     = ""
-    alt       = "Its Nuhil"
+  # Optionally display a message about the site's use of cookies, which may be
+  # required for your site in the European Union. Set the parameter below to a
+  # page where the user can get more information about cookies, either on your
+  # site or externally, for example:
+  #cookie_consent_info_url = "/cookie-information/"
+  #cookie_consent_info_url = "http://cookiesandyou.com"
 
-[params.postAmount]
-# Sets the number of recent posts to show in the sidebar. The default value is 5.
-    sidebar = 5
+  # customise the contents of the navbar at the top of the page.  The default
+  # behaviour is to list all static pages not in the posts directory. When the
+  # parameter below is set to true you will have to manually add entries to the
+  # navbar, either by adding the following menu variable to the front matter of
+  # the relevant pages
+  #   menu = "navbar"
+  # or by specifying menu entries in a similar way to the sidebar menu above.
+  #custom_navbar = true
 
-# Sets the menu items in the navigation bar
-# Identifier prepends a Font Awesome icon to the menu item
-[[menu.main]]
-  name = "Home"
-  url = "/"
-  identifier = "fa fa-home"
-  weight = 1
+  # show sharing icons on pages/posts (default: true)
+  #sharingicons = true
 
-[[menu.main]]
-  name = "About"
-  url = "/about/"
-  identifier = "fa fa-id-card-o"
-  weight = 2
+  # Display post summaries instead of content in list templates (default: true)
+  # truncate = false
 
-[[menu.main]]
-  name = "Blog"
-  url = "/blog/"
-  identifier = "fa fa-newspaper-o"
-  weight = 3
+  # Disable the use of sub-resource integrity on CSS/JS assets (default: false)
+  # Useful if you're using a CDN or other host where you can't control cache headers
+  #disable_sri = false
 
-#[[menu.main]]
-  # name = "Itemized"
-  # url = "/itemized/"
-  # identifier = "fa fa-list"
-  # weight = 4
+  [params.sidebar]
+    # Optional about block for sidebar (can be Markdown)
+    about = "Computer Science Graduate & former *Software Engineer* with more than 6 years of experience who believe in *Machine Learning* & likes the `Unix` environment for developing API Centric & Back End Web Apps in `Python` and `PHP` ecosystem; considering `MEAN` as a robust stack & finds fun in Mobile App Development with `Swift` & `Kotlin` for iOS & Android and lastly strict on cool UI/UX & *Cyber Security*. [Read More](/about)"
 
-[[menu.main]]
-  name = "Categories"
-  url = "/categories/"
-  identifier = "fa fa-sitemap"
-  weight = 5
+    # How many posts to show on the sidebar (Default: 5)
+    #num_recent_posts = 2
 
-[[menu.main]]
-  name = "Contact"
-  url = "/contact/"
-  identifier = "fa fa-envelope-o"
-  weight = 6
+  [params.social]
+    # Optional, used for attribution in Twitter cards (ideally not a person
+    # for example: nytimes, flickr, NatGeo, etc).
+    # See: https://dev.twitter.com/cards/types/summary-large-image
+    twitter = "nuhil"
 
-# Sets Social Media icons to appear and link to your account. Value should be your
-# username unless otherwise noted. These are the icons affected by socialAppearAtTop
-# and socialAppearAtBottom.
-[social]
-  # Coding Communities
-  github          = "nuhil"
-  gitlab          = ""
-  stackoverflow   = "1061236" # User Number
-  bitbucket       = ""
-  jsfiddle        = ""
-  codepen         = ""
-  # Visual Art Communities
-  deviantart      = ""
-  flickr          = ""
-  behance         = ""
-  dribbble        = ""
-  # Publishing Communities
-  wordpress       = ""
-  medium          = ""
-  # Professional/Business Oriented Communities
-  linkedin        = "nuhil"
-  foursquare      = ""
-  xing            = ""
-  slideshare      = ""
-  # Social Networks
-  facebook        = "nuhil"
-  googleplus      = ""
-  reddit          = ""
-  quora           = ""
-  youtube         = "channel/UCJFY9iVRXTJu1SPVI_vRNDw"
-  vimeo           = ""
-  whatsapp        = "" # WhatsApp Number
-    # WeChat and QQ need testing.
-    wechat          = ""
-    qq              = "" # User ID Number
-  instagram       = "nuhil"
-  tumblr          = ""
-  twitter         = "nuhil"
-  skype           = ""
-  snapchat        = ""
-  pinterest       = ""
-  telegram        = ""
-  vine            = ""
-  # Email
-  email           = ""
+# Default content language for Hugo 0.17's multilingual support (default is "en")
+# See: https://github.com/spf13/hugo/blob/master/docs/content/content/multilingual.md
+#DefaultContentLanguage = "en"
+
+# Languages to render
+#[languages.en]
+#[languages.bg]
+
+# vim: ts=2 sw=2 et
+
+pygmentsCodeFences = true
