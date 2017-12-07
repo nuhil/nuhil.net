@@ -86,8 +86,10 @@
   <footer>
 
   {{ if (ne ($.Param "sharingicons") false) }}
-  {{ partial "sharing-icons.html" . }}
+    {{ partial "sharing-icons.html" . }}
   {{ end }}
+
+  {{ partial "related.html" . }}  
 
   {{ if and (.Site.DisqusShortname) (ne .Params.comments false) }}
   {{ template "_internal/disqus.html" . }}
