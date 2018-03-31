@@ -3,7 +3,7 @@ title = "About Me"
 date = 2015-01-01T00:00:00-00:00
 +++
 
-Computer Science Graduate and former Software Engineer with more than 5 years of experience who believe in Machine Learning and likes the Unix environment for developing API Centric & Back End Web Apps in Python and PHP ecosystem; considering MEAN as a robust stack & finds fun in Mobile App Development with Objective-C, Swift & Kotlin for iOS & Android and lastly strict on cool UI/UX & Cyber Security.
+PhD student of Cyber Security with prior graduation in Computer Science and, former Software Engineer with more than 5 years of experience who believes in Artificial Intelligence and likes the Unix environment for developing API Centric & Back End Apps in Python, PHP and, Java ecosystem; considering MEAN as a robust stack & finds fun in Mobile App Development with Swift & Kotlin for iOS & Android preserving cool UI/UX & Security.
 
 ***
 
