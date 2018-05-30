@@ -64,8 +64,8 @@ disqusShortname = "nuhil"
   # required for your site in the European Union. Set the parameter below to a
   # page where the user can get more information about cookies, either on your
   # site or externally, for example:
-  #cookie_consent_info_url = "/cookie-information/"
-  #cookie_consent_info_url = "http://cookiesandyou.com"
+  # cookie_consent_info_url = "/cookie-information/"
+  cookie_consent_info_url = "http://cookiesandyou.com"
 
   # customise the contents of the navbar at the top of the page.  The default
   # behaviour is to list all static pages not in the posts directory. When the
