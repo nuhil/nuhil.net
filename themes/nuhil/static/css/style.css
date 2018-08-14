@@ -158,3 +158,9 @@ ul.icons li > * {
     font-size: 14px;
     color: #999;
 }
+
+/* Some hacks for alignment */
+
+div.LI-profile-badge {
+    text-align: center;
+}

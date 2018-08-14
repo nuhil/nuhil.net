@@ -88,7 +88,7 @@ disqusShortname = "nuhil"
 
   [params.sidebar]
     # Optional about block for sidebar (can be Markdown)
-    about = "PhD student of `Cyber Security` with prior graduation in Computer Science and, former Software Engineer with more than 5 years of experience who believes in `Artificial Intelligence` and likes the `Unix` environment for developing API Centric & Back End Apps in `Python`, `PHP` and, `Java` ecosystem; considering `MEAN` as a robust stack & finds fun in Mobile App Development with `Swift` & `Kotlin` for iOS & Android preserving cool `UI/UX` & Security. [Read More](/about)"
+    about = "PhD student of `Cyber Security` with prior graduation in Computer Science, and former Software Engineer with more than 5 years of experience who believes in `Artificial Intelligence` and likes the `Unix` environment for developing API Centric & Back End Apps in `Python`, `PHP` and, `Java` ecosystem; considering `MEAN` as a robust stack & finds fun in Mobile App Development with `Swift` & `Kotlin` for iOS & Android preserving cool `UI/UX` & Security. [Read More](/about)"
 
     # How many posts to show on the sidebar (Default: 5)
     #num_recent_posts = 2
