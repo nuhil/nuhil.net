@@ -1,10 +1,10 @@
 <aside class="col-lg-4 ml-auto blog-sidebar">
-  {{ if and (.Site.Params.sidebar) (isset .Site.Params.sidebar "about") }}
+  <!-- {{ if and (.Site.Params.sidebar) (isset .Site.Params.sidebar "about") }}
   <section class="sidebar-module sidebar-module-inset text-justify">
     <h4>{{ i18n "aboutMe" }}</h4>
     <p>{{ .Site.Params.sidebar.about | markdownify }}</p>
   </section>
-  {{ end }}
+  {{ end }}   -->
 
 <section class="sidebar-module">
   <h4>Find Me on Linkedin</h4>
@@ -12,8 +12,12 @@
 </section>
 
 <section class="sidebar-module">
-    <h4>Me on StackOverflow</h4>
+    <h4>Me on Github</h4>
     <div class="github-card" data-github="nuhil" data-width="314" data-height="" data-theme="default"></div>
+</section>
+
+<section class="sidebar-module">
+  <a class="twitter-timeline" data-width="314" data-height="500" data-theme="light" href="https://twitter.com/nuhil?ref_src=twsrc%5Etfw">Tweets by nuhil</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </section>
 
   {{ if .Site.Params.sidebar }}
