@@ -161,9 +161,9 @@ ul.icons li > * {
 
 /* Some hacks for alignment */
 
-/* div.LI-profile-badge {
+div.github-card-body {
     text-align: center;
-} */
+}
 
 div.linkedin {
     padding-top: 0;
