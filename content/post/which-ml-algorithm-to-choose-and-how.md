@@ -13,7 +13,7 @@ linktitle = ""
 type = "post"
 +++
 
-I've been curating a list of popular machine learning algorithms, models or estimators in a single table as a handy cheat sheet. Each of them has attached reference links for quick look up. So far, my resources are [Microsoft Azure ML](https://studio.azureml.net/), [Scikit-learn](http://scikit-learn.org/stable/), [Tensorflow](https://www.tensorflow.org/). I will be adding more variants of these algorithms and models with specific reference frequently.
+I've been curating a list of popular machine learning algorithms, models or estimators in a single table as a handy cheat sheet. Each of them has attached reference links for quick look up. So far, my resources are [Microsoft Azure ML](https://studio.azureml.net/), [Scikit-learn](http://scikit-learn.org/stable/), [Tensorflow](https://www.tensorflow.org/). I will be adding more variants of these algorithms and models with specific reference frequently. Moreover, I will add pros and cons of each one of them based on accuracy, complexity, interpretability etc.
 
 <!--more-->
 
