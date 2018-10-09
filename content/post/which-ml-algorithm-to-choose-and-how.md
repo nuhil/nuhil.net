@@ -8,7 +8,7 @@ date = 2018-10-01T00:00:00-00:00
 description = "List of popular machine learning algorithms, models or estimators as a cheat sheet."
 featured = ""
 featuredalt = "Machine Learning Algorithms"
-featuredpath = ""
+featuredpath = "//i.imgur.com/XbecxS0l.jpg"
 linktitle = ""
 type = "post"
 +++
