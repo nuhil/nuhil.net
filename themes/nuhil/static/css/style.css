@@ -161,7 +161,7 @@ ul.icons li > * {
 
 /* Some hacks for alignment */
 
-div.github-card-body, div.stackoverflow {
+div.github-card-body {
     text-align: center;
 }
 
