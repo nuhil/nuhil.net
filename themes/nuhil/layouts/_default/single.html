@@ -61,18 +61,6 @@
     <h2 class="blog-post-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h2>
     <p class="blog-post-meta"><time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format $dateFormat }}</time> by {{ .Params.author | default .Site.Params.author }}{{ if or (.Params.categories) (.Params.tags) }} in {{ partial "meta-terms.html" . }}{{ end }}</p>
   </header>
-  
-  {{ if not (or (eq .URL "/about/") (eq .URL "/contact/")) }}
-    <div class="mt-4 mb-4">
-      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-      <script>
-           (adsbygoogle = window.adsbygoogle || []).push({
-                google_ad_client: "ca-pub-3350277075217187",
-                enable_page_level_ads: true
-           });
-      </script> 
-    </div>
-  {{ end }}
 
   {{ .Content }}
 
